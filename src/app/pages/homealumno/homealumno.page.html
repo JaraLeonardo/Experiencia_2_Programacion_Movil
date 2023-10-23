@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-outline" class="icon" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="light">Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <br>
+    <ion-card-title class="titulo">Bienvenido/a {{getNombre()}}!</ion-card-title>
+    <br>
+    <img src="assets/escanearqr.png">
+    <br>
+    <ion-card-content>
+      <p class="parrafo">Para registrar tu asistencia haz click en el botón "Escanear QR", a continuación se desplegará la camara de tu celular y tendrás que escanear el codigo QR que tu profesor proyectara, de esta forma se registrará tu asistencia de forma automática.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" routerLink="/escanearqr" class="button">Escanear QR</ion-button>
+</ion-content>

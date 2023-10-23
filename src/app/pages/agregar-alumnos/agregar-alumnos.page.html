@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-title color="light">Agregar</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="icon" [routerLink]="['/listar-alumnos']">
+         Listar
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button class="icon"
+        defaultHref="/"
+        text="Volver"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre: </ion-label>
+      <ion-input type="text" name="txtNombre" [(ngModel)]="newAlumno.nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Seccion: </ion-label>
+      <ion-input type="text" name="txtSeccion" [(ngModel)]="newAlumno.seccion" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Fecha: </ion-label>
+      <ion-input type="text" name="txtFecha" [(ngModel)]="newAlumno.fecha" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)=" crearAlumno()" expand="block" class="button">
+          Agregar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

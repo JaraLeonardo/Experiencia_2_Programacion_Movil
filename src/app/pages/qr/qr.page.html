@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="header">
+
+    <ion-title color="light">Codigo QR</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button class="icon"
+        defaultHref="/"
+        text="Volver"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-header>
+    <ion-card-subtitle>Codigo QR generado</ion-card-subtitle>
+    <ion-card-title>Todos los alumnos deben escanear el QR en un tiempo máximo de 5 minutos.</ion-card-title>
+  </ion-card-header>
+  <ion-card>
+    <img src="assets/qr.png" class="ion-padding">
+  </ion-card>
+  <br>
+  <ion-button expand="block" class="button" (click)="presentAlert()">Completar Asistencia</ion-button>
+
+</ion-content>

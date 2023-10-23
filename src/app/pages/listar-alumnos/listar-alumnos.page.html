@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-title color="light">Asistencia</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="icon" [routerLink]="['/agregar-alumnos']">
+         Agregar
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button class="icon"
+        defaultHref="/"
+        text="Volver"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let a of alumnos">
+      <ion-label>{{ a.nombre}} </ion-label>
+      <ion-label>{{ a.seccion}} </ion-label>
+      <ion-label>{{ a.fecha}}</ion-label>
+      </ion-item>
+  </ion-list>
+
+</ion-content>

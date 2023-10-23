@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="light">Sismos en Chile</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button class="icon"
+        defaultHref="/"
+        text="Volver"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12"
+          *ngFor="let feriado of feriados; let i=index">
+
+          <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>
+                  <span class="text-primary">{{i + 1}}. </span>
+                  <span class="feriado-source-name">Fecha: {{feriado.Fecha}} </span> </ion-card-subtitle>
+                <ion-card-title>Profundidad: {{feriado.Profundidad}}</ion-card-title>
+                <ion-card-title>Magnitud: {{feriado.Magnitud}}</ion-card-title>
+                <ion-card-title>Referencia Geografica: {{feriado.RefGeografica}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>
+              </p>
+            </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

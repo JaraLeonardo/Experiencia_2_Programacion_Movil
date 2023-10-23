@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="light">About us</ion-title>
+      <ion-buttons slot="end">
+        <ion-back-button class="icon"
+          defaultHref="/"
+          text="Volver"
+          mode="ios">
+        </ion-back-button>
+      </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-header>
+    <ion-card-title>¿Quiénes somos?</ion-card-title>
+    <p class="parrafo">RegisterApp es una aplicación para iOS y Android, que tiene como finalidad reducir los tiempos destinados para registrar la asistencia e instar a los alumnos a asistir presencialmente a clases, también reducir los errores en los registros de asistencia.</p>
+  </ion-card-header>
+  <ion-card>
+    <img src="assets/aboutus.png" class="ion-padding">
+  </ion-card>
+  <br>
+
+</ion-content>

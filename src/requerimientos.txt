@@ -1,0 +1,6 @@
+Tener node, tener angualar, tener ionic
+Crear un proyecto en blank con angular
+instalar storage
+npm install --save @ionic/storage
+npm install --save @ionic/storage-angular
+Descargar la carpeta SRC de github y pegarla en el proyecto

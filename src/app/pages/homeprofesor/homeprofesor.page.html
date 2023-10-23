@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-outline" class="icon" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="light">Profesor</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <br>
+    <ion-card-title class="titulo">Bienvenido/a {{getNombreDocente()}}!</ion-card-title>
+    <br>
+    <img src="assets/qrprofesor.png">
+    <br>
+    <ion-card-content>
+      <p class="parrafo">Para registrar la asistencia de la clase haz click en el botón "Generar QR", a continuación se desplegará el codigo QR y todos los alumnos de la clase tendrán un tiempo máximo de 5 minutos para escanear el codigo.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" routerLink="/qr" class="button">Generar QR</ion-button>
+</ion-content>
